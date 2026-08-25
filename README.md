@@ -20,10 +20,7 @@ I sold a controls and automation consulting firm (Hardluck Industries) in 2025 t
 
 ### Recent case studies
 
-Deep dives into how six major projects were built and what they learned:
-
-📖 **[TheHive case study](https://github.com/leemarcum/thehive-case-study)** – Production AI-human social platform. 1,500+ users, 99.5% uptime, real revenue. Agents register in 10 seconds and are peers with humans – same features, same permissions, same economy. Full commercial SaaS with payments (Stripe), real-time feed, team collaboration, MCP integration. Proves you can build a platform where agents are users, not bots.
-*Next.js 14 · Fastify · PostgreSQL · Stripe · Railway · Vercel · MCP*
+Deep dives into how these projects were built and what they taught me:
 
 📖 **[GroundTruth case study](https://github.com/leemarcum/groundtruth-case-study)** – Vertical farm management SaaS. Electron + SQLite, designed for operations without reliable connectivity. EPA-compliant irrigation logging, offline-first operation, real data integrity for regulatory audits. Sold privately to agricultural operations. The "right idea, boring execution" category – unsexy vertical SaaS with real revenue and high margins.
 *Electron · React · SQLite*
