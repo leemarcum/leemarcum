@@ -13,7 +13,7 @@ I sold a controls and automation consulting firm (Hardluck Industries) in 2025 t
 
 ### Currently shipping
 
-**FieldSync** – field service platform for Irrigation Central. React web + Flutter mobile + Firebase backend, offline-first for crews working in degraded-connectivity areas. Replaced a paper workflow that ate ~6 hours of admin per tech on a heavy week – now under 30 minutes. Every service tech is on it. GPS, weather data, role-based access for four user types, parts/inventory tracking, push notifications, TV dashboards for the break room. Code lives in the company's org.
+**FieldSync** – field service platform I built at Hardluck Industries, my own firm, and now run in production at Irrigation Central. React web + Flutter mobile + Firebase backend, offline-first for crews working in degraded-connectivity areas. Replaced a paper workflow that ate ~6 hours of admin per tech on a heavy week. Every service tech is on it. GPS, weather data, role-based access for four user types, parts/inventory tracking, push notifications, TV dashboards for the break room. I own it outright; the source is private.
 *React · Flutter · Firebase (Auth, Firestore, Functions) · Vercel · TailwindCSS*
 
 ---
