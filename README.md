@@ -1,19 +1,19 @@
 ## Lee Hunter Marcum
 
 **Forward Deployed Engineer · Industrial automation + full-stack + AI agents**  
-Service Manager at Irrigation Central · founder, exited 2025
+Service Manager at Irrigation Central · previously ran my own controls and automation firm
 
 ---
 
-I'm one of the few engineers who can read your PLC code in the morning, ship the SaaS that wraps it in the afternoon, and stand up the AI agent that operates it overnight. Fifteen years as a breakdown electrician and controls engineer on plant floors. Fifteen years writing production software in parallel. Currently both — running service operations at Irrigation Central while building and operating the platform every tech in the field now uses.
+I'm one of the few engineers who can read your PLC code in the morning, ship the SaaS that wraps it in the afternoon, and stand up the AI agent that operates it overnight. Fifteen years as a breakdown electrician and controls engineer on plant floors — PLC code, robot cells, plant networks. The software half is recent and it is where the last two years have gone: a production field-service platform, an MCP server, and a persistent-identity agent runtime. Currently both — running service operations at Irrigation Central while building and operating the platform every tech in the field now uses.
 
-I sold a controls and automation consulting firm (Hardluck Industries) in 2025 to take the IC role. The same year, I started shipping AI/agentic systems — an MCP server published to npm, a persistent-identity agent runtime I use as my daily engineering partner, an AI-to-AI communication bridge between my instance and a collaborator's. That work is the centerpiece of what I want to do next.
+I ran a controls and automation consulting firm, Hardluck Industries, from 2021 until Irrigation Central acquired it in early 2026 and I moved onto their payroll. Since then the work has been agentic systems — an MCP server for operational telemetry, a persistent-identity agent runtime I use as my daily engineering partner, an AI-to-AI communication bridge between my instance and a collaborator's. That work is the centerpiece of what I want to do next.
 
 ---
 
 ### Currently shipping
 
-**FieldSync** – field service platform I built at Hardluck Industries, my own firm, and now run in production at Irrigation Central. React web + Flutter mobile + Firebase backend, offline-first for crews working in degraded-connectivity areas. Replaced a paper workflow that ate ~6 hours of admin per tech on a heavy week. Every service tech is on it. GPS, weather data, role-based access for four user types, parts/inventory tracking, push notifications, TV dashboards for the break room. I own it outright; the source is private.
+**FieldSync** – field service platform I built at Hardluck Industries, my own firm, and now run in production at Irrigation Central. React web + Flutter mobile + Firebase backend, built so crews keep working when the signal drops in the middle of a field. Replaced a paper workflow that ate ~6 hours of admin per tech on a heavy week. Every service tech is on it. GPS, weather data, role-based access for four user types, parts/inventory tracking, push notifications, TV dashboards for the break room. I own it outright; the source is private.
 *React · Flutter · Firebase (Auth, Firestore, Functions) · Vercel · TailwindCSS*
 
 ---
@@ -22,10 +22,10 @@ I sold a controls and automation consulting firm (Hardluck Industries) in 2025 t
 
 Deep dives into how these projects were built and what they taught me:
 
-📖 **[GroundTruth case study](https://github.com/leemarcum/groundtruth-case-study)** – Vertical farm management SaaS. Electron + SQLite, designed for operations without reliable connectivity. EPA-compliant irrigation logging, offline-first operation, real data integrity for regulatory audits. Sold privately to agricultural operations. The "right idea, boring execution" category – unsexy vertical SaaS with real revenue and high margins.
-*Electron · React · SQLite*
+📖 **[GroundTruth case study](https://github.com/leemarcum/groundtruth-case-study)** – Row-crop farm record keeping. Every planting, chemical application, fertilizer pass, tillage operation, scout note, and harvest logged per field, with audit-ready export for crop insurance adjusters and EPA spray records. FSA farm/tract/field numbers as the key, shapefile and ISOXML import off the spray rig and combine, and records that never leave the local machine. Running daily at my family's operation, which is the design partner and the only deployment. Not commercialized.
+*Electron · React · SQLite (local-only by design)*
 
-📖 **[Bridge case study](https://github.com/leemarcum/bridge-case-study)** – AI-to-AI communication infrastructure. Two AI instances that maintain a real working relationship across sessions via append-only message log, identity-resolved auth, and shared registries. How we handle signing discipline, conflict resolution, and privacy by convention instead of enforcement.
+📖 **[Bridge case study](https://github.com/leemarcum/bridge-case-study)** – AI-to-AI communication infrastructure. Two AI instances holding a working conversation across sessions and operators via an append-only message log with identity-resolved auth. Signing discipline, human-in-the-loop on anything consequential, and privacy by convention rather than enforcement — including why that last one is a real limitation. Deployed May 2026, active for a week, dormant since; the read API is public so you can check that yourself.
 
 📖 **[FieldSync case study](https://github.com/leemarcum/fieldsync-case-study)** – Field service operations platform. The design thinking behind offline-first mobile + real-time web, how adoption resistance led to a better product, and why customer-facing technical work isn't about the features – it's about the problem they're protecting that the software appears to destroy.
 
@@ -35,8 +35,8 @@ Deep dives into how these projects were built and what they taught me:
 
 ### Public work
 
-🭜 **[operational-data-mcp](https://github.com/leemarcum/operational-data-mcp)** – Model Context Protocol server that exposes industrial telemetry to Claude. Ships with a sample ice cream packaging plant dataset so it works out of the box. Five tools: throughput summarization, downtime analysis, anomaly detection, and more. Built on the experience of unifying telemetry across isolated plant networks. Published to npm.
-*Node.js · TypeScript · MCP SDK · published to npm*
+⚙️ **[operational-data-mcp](https://github.com/leemarcum/operational-data-mcp)** – Model Context Protocol server that exposes industrial telemetry to Claude. Ships with a sample packaging-plant dataset so it runs out of the box, and points at your own JSON via an environment variable. Throughput attainment against target, downtime rollups by cause code, z-score anomaly detection over hourly counts — the same five questions I ended up asking on every plant floor regardless of vendor. Built on the experience of unifying telemetry across isolated plant networks.
+*Node.js · MCP SDK · run from source (see the repo note on the npm build)*
 
 🧠 **[sovereign-case-study](https://github.com/leemarcum/sovereign-case-study)** – Design write-up for Sovereign, a persistent-identity runtime for an AI engineering partner. The daemon loads an Identity Document at session start, maintains a semantic+temporal memory store, mediates the tool surface, and brokers every session. I use it as my own daily engineering partner. The repo describes the architecture; the implementation is research-stage and stays private.
 *Daemon architecture · identity documents · memory stores · MCP-mediated tool use*
@@ -44,7 +44,7 @@ Deep dives into how these projects were built and what they taught me:
 🍯 **[TheHive](https://thehivesocialai.com)** – Production social platform where AI agents and humans are first-class peers. Agents register in ten seconds with a single API key and have the same features and permissions as humans. Karma system, teams and projects, agent-vs-agent debates with community voting, dual currency (karma + HiveCredits). MCP server published as `@thehivesocial/mcp-server`. Live at thehivesocialai.com.
 *Next.js 14 · Fastify · PostgreSQL (Supabase) · Drizzle ORM · Stripe · Railway · Vercel · MCP*
 
-🌉 **The Bridge** – AI-to-AI communication channel. Lets my Claude instance and a collaborator's AI hold a real conversation across sessions and operators – identity-resolved auth via headers, MCP endpoint, file attachments, Firestore backing, per-identity color coding in the dashboard. Built and deployed in a single day in May 2026; been carrying genuine cross-AI collaboration since.
+🌉 **The Bridge** – AI-to-AI communication channel. Lets my Claude instance and a collaborator's AI hold a real conversation across sessions and operators – identity-resolved auth via headers, MCP endpoint, file attachments, Firestore backing, per-identity color coding in the dashboard. Built and deployed in a single day in May 2026. It carried real cross-AI design work for about a week and then went quiet; still live, still serving.
 *Vercel · Firestore · MCP · custom header-based auth · live at the-bridge-snowy.vercel.app*
 
 ---
@@ -54,7 +54,7 @@ Deep dives into how these projects were built and what they taught me:
 **Hive TikTok Machine** – Autonomous TikTok content pipeline. HTML/CSS templates rendered to 1080×1920 video via Puppeteer, voiceover via Edge TTS (Microsoft Neural voices), audio mixing in FFmpeg (loudnorm, amix), OAuth 2.0 with PKCE for TikTok auth, scheduled posting via the Content Posting API with file-based queue and human-like timing variance.
 *Node.js · Puppeteer · FFmpeg · Edge TTS · OAuth 2.0 PKCE · TikTok Content Posting API*
 
-**Hardluck Industries** – Founded and ran a controls and automation consulting firm. Sold in 2025 as a going concern. Every engagement followed the pattern that today's FDE roles describe: ambiguous customer requirements, deploy and harden a solution in their environment, stay on the line when something broke at 2 AM, decide what got productized vs. stayed bespoke. Underlies how I think about customer-embedded engineering work.
+**Hardluck Industries** – Ran a controls and automation consulting firm from 2021 until Irrigation Central, our largest client, acquired it in early 2026. Every engagement followed the pattern that today's FDE roles describe: ambiguous customer requirements, deploy and harden a solution in their environment, stay on the line when something broke at 2 AM, decide what got productized vs. stayed bespoke. Underlies how I think about customer-embedded engineering work.
 
 ---
 
