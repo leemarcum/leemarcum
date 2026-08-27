@@ -1,4 +1,4 @@
-## Lee Marcum
+## Lee Hunter Marcum
 
 **Forward Deployed Engineer · Industrial automation + full-stack + AI agents**  
 Service Manager at Irrigation Central · founder, exited 2025
@@ -63,7 +63,7 @@ Deep dives into how these projects were built and what they taught me:
 I started as a breakdown electrician and have been working at the seam between industrial systems and software ever since. Selected projects:
 
 - **Pick-and-pack robotics – ice cream plant.** Programmed a robotic system that picked cartons off a packaging line, oriented them, placed them into shipping cases. Variable product weights, missed-pick recovery, end-of-line throughput matched to upstream line speed.
-- **Robotic glue dispensing and screw insertion – North American Lighting** (tier-1 automotive supplier). Programmed glue and fastener robots on a headlamp assembly line. Multi-axis motion paths, tight tolerances, vision-system integration for placement verification, cycle times matched to takt time.
+- **Robotic glue dispensing and screw insertion – tier-1 automotive lighting supplier.** Programmed glue and fastener robots on a headlamp assembly line. Multi-axis motion paths, tight tolerances, vision-system integration for placement verification, cycle times matched to takt time.
 - **Pick-and-place crane rewrite – aluminum smelter.** Inherited a misbehaving PLC program managing carbon block sequencing on an overhead crane. Rewrote from scratch with a clean state machine and deterministic placement; nearly eliminated the manual intervention the prior program required.
 - **Glass bottle line – kick-out timing controls.** Reprogrammed the timing and arm-actuation logic that spaces bottles evenly onto a downstream conveyor. Coordinated line-speed sensors, bottle detection, and mechanical actuation – too early and bottles collide, too late and gaps form.
 - **Plant-wide telemetry unification – ice cream plant.** Mapped hundreds of I/O points across multiple vendor systems and PLC platforms. Designed a NAT-based network architecture that kept line/machine/plant network boundaries intact (so a fault on one line couldn't propagate, security boundaries stayed intact) while passing real-time data up to a unified plant-level view. Live downtime, live production counts, line-by-line throughput – all flowing from previously isolated systems into a single view management could act on.
