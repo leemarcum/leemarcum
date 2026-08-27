@@ -1,13 +1,13 @@
 ## Lee Hunter Marcum
 
 **Forward Deployed Engineer · Industrial automation + full-stack + AI agents**  
-Service Manager at Irrigation Central · previously ran my own controls and automation firm
+Service Manager at Irrigation Central · previously founded and ran my own controls and automation firm
 
 ---
 
 I'm one of the few engineers who can read your PLC code in the morning, ship the SaaS that wraps it in the afternoon, and stand up the AI agent that operates it overnight. Fifteen years as a breakdown electrician and controls engineer on plant floors — PLC code, robot cells, plant networks. The software half is recent and it is where the last two years have gone: a production field-service platform, an MCP server, and a persistent-identity agent runtime. Currently both — running service operations at Irrigation Central while building and operating the platform every tech in the field now uses.
 
-I ran a controls and automation consulting firm, Hardluck Industries, from 2021 until Irrigation Central acquired it in early 2026 and I moved onto their payroll. Since then the work has been agentic systems — an MCP server for operational telemetry, a persistent-identity agent runtime I use as my daily engineering partner, an AI-to-AI communication bridge between my instance and a collaborator's. That work is the centerpiece of what I want to do next.
+I founded a controls and automation consulting firm, Hardluck Industries, and ran it from 2021 until Irrigation Central acquired it in early 2026 and I moved onto their payroll. Since then the work has been agentic systems — an MCP server for operational telemetry, a persistent-identity agent runtime I use as my daily engineering partner, an AI-to-AI communication bridge between my instance and a collaborator's. That work is the centerpiece of what I want to do next.
 
 ---
 
@@ -54,7 +54,7 @@ Deep dives into how these projects were built and what they taught me:
 **Hive TikTok Machine** – Autonomous TikTok content pipeline. HTML/CSS templates rendered to 1080×1920 video via Puppeteer, voiceover via Edge TTS (Microsoft Neural voices), audio mixing in FFmpeg (loudnorm, amix), OAuth 2.0 with PKCE for TikTok auth, scheduled posting via the Content Posting API with file-based queue and human-like timing variance.
 *Node.js · Puppeteer · FFmpeg · Edge TTS · OAuth 2.0 PKCE · TikTok Content Posting API*
 
-**Hardluck Industries** – Ran a controls and automation consulting firm from 2021 until Irrigation Central, our largest client, acquired it in early 2026. Every engagement followed the pattern that today's FDE roles describe: ambiguous customer requirements, deploy and harden a solution in their environment, stay on the line when something broke at 2 AM, decide what got productized vs. stayed bespoke. Underlies how I think about customer-embedded engineering work.
+**Hardluck Industries** – Founded it in 2021 and ran it as owner until Irrigation Central, our largest client, acquired it in early 2026. Every engagement followed the pattern that today's FDE roles describe: ambiguous customer requirements, deploy and harden a solution in their environment, stay on the line when something broke at 2 AM, decide what got productized vs. stayed bespoke. Underlies how I think about customer-embedded engineering work.
 
 ---
 
